@@ -33,6 +33,10 @@ public abstract class Pet {
 		this.pWeight = weight;
 	}
 	
+	public Pet (String pName, int pAge) {
+		this(pName, pAge, 45.5);
+	}
+	
 	public Pet(String name) {
 		this(name, 3, 34.5);
 	}
