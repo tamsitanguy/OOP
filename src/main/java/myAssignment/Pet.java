@@ -38,10 +38,16 @@ public abstract class Pet {
 	}
 	
 	public Pet(String name) {
-		this(name, 3, 34.5);
+		this(name, 3);
 	}
 	 public Pet() {
 		 this("Caniche");
+	 }
+	 
+	 @Override
+	 public String toString() {
+		 return "Pet name: "+pName+ "pAge Age: "+pAge+ "Pet weight: "+ pWeight;
+		 
 	 }
 
 }
