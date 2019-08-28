@@ -5,6 +5,7 @@ public abstract class Pet {
 	private String pName;
 	private int pAge;
 	private double pWeight;
+	
 	public String getpName() {
 		return pName;
 	}
@@ -44,9 +45,16 @@ public abstract class Pet {
 		 this("Caniche");
 	 }
 	 
+	 //run()
+	 public void run() {
+		 System.out.println(this.pName+ "is running");
+	 }
+	 
+	// public abstract void grow();
+	 
 	 @Override
 	 public String toString() {
-		 return "Pet name: "+pName+ "pAge Age: "+pAge+ "Pet weight: "+ pWeight;
+		 return "Pet name : "+pName+ "pAge Age : "+pAge+ " Pet weight : "+ pWeight;
 		 
 	 }
 
