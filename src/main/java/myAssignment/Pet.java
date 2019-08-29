@@ -47,10 +47,10 @@ public abstract class Pet {
 	 
 	 //run()
 	 public void run() {
-		 System.out.println(this.pName+ "is running");
+		 System.out.println(this.pName+ " is running");
 	 }
 	 
-	// public abstract void grow();
+	 public abstract void train();
 	 
 	 @Override
 	 public String toString() {

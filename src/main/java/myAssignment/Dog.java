@@ -4,11 +4,11 @@ import java.io.Serializable;
 
 public class Dog extends Pet implements Serializable {
 	
-	public static double speed = 0.0;//in mph
+	public static int dogNumb = 0;//counting the number of dogs
 	
 	public Dog(String name, int age, double weight) {
 		super(name, age, weight);
-		speed = speed+1;
+		dogNumb = dogNumb+1;
 	}
 	
 	public Dog(String name, int age) {
@@ -23,18 +23,19 @@ public class Dog extends Pet implements Serializable {
 		this("kiwi");
 	}
 	//running speed must be at least 10mph
-	public static void showSpeed() {
-		if(speed<10) {
-			System.out.println("This dog is not running "+speed);
+	public static void showPop() {
+		if(dogNumb == 0) {
+			System.out.println("missing espace "+dogNumb);
 		}
 		else {
-			System.out.println("This dog is running at :"+speed +" mph");
+			System.out.println("existing espace: "+dogNumb);
 		}
 		
-//		@Override
-//		public void grow() {
-//			System.out.println(this.getpName());
-//		}
+	}
+	
+	@Override
+	public void train() {
+		System.out.println(this.getpName()+ " is in training");
 	}
 	
 
