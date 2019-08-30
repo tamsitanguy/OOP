@@ -2,28 +2,28 @@ package myAssignment;
 
 import java.io.Serializable;
 
-public class Cat extends Pet implements Animal, Serializable {
+public class Cat extends Pet implements Animal, Serializable, Comparable<Cat> {
     
-	public static double dogNumb = 0;
+	//public static double dogNumb = 0;
 	
 	public Cat(String cName, int cAge, double cWeight) {
 		super(cName, cAge, cWeight);
-		dogNumb++;
+		//dogNumb++;
 	}
 	
 	public Cat(String name, int age) {
 		super(name, age);
-		dogNumb++;
+		//dogNumb++;
 		
 	}
 	
 	public Cat(String name) {
 		super(name);
-		dogNumb++;
+		//dogNumb++;
 	}
 	
 	public Cat() {
-		dogNumb++;
+		//dogNumb++;
 	}
 	
 	public void meow() {
@@ -31,9 +31,18 @@ public class Cat extends Pet implements Animal, Serializable {
 		System.out.println(this.getpName()+"is making a meow sound");
 	}
 	
-	@Override
+	//@Override
 	public void train() {
-		System.out.println(this.getpName()+ "can be trained");
+		System.out.println(this.getpName()+ "needs to be trained");
 	}
 	
+	@Override
+	public void train(Hunt h) {
+		System.out.println(this.getpName()+ "is trained to shoot");
+	}
+	
+	public int compareTo(Cat c) {
+		
+		return this.getpName().compareTo(c.getpName());
+	}
 }

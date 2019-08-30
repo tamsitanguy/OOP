@@ -7,10 +7,10 @@ public class PetDriver {
 	
 		System.out.println(new Cat());
 		
-		Dog.showPop();
-		Dog d = new Dog();
-		d.run();
-		Pet p = new Dog();
+//		Dog.showPop();
+//		Dog d = new Dog();
+//		d.run();
+//		Pet p = new Dog();
 		//System.out.println(new .showSpeed());
 
 	}

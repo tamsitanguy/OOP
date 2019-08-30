@@ -23,15 +23,15 @@ public class Dog extends Pet implements Serializable {
 		this("kiwi");
 	}
 	//running speed must be at least 10mph
-	public static void showPop() {
-		if(dogNumb == 0) {
-			System.out.println("missing espace "+dogNumb);
-		}
-		else {
-			System.out.println("existing espace: "+dogNumb);
-		}
-		
-	}
+//	public static void showPop() {
+//		if(dogNumb == 0) {
+//			System.out.println("missing espace "+dogNumb);
+//		}
+//		else {
+//			System.out.println("existing espace: "+dogNumb);
+//		}
+//		
+//	}
 	
 	@Override
 	public void train() {

@@ -26,7 +26,7 @@ public abstract class Pet {
 	}
 	
 	//chaining overloaded constructors
-	
+	//constructor accepting 3 parameters
 	public Pet(String name, int age, double weight) {
 		super();
 		this.pName = name;
@@ -34,13 +34,17 @@ public abstract class Pet {
 		this.pWeight = weight;
 	}
 	
+	//This constructor overloads the 1st one and accepts 2 parameters
 	public Pet (String pName, int pAge) {
 		this(pName, pAge, 45.5);
 	}
 	
+	//That constructor accepts 1 parameter.
 	public Pet(String name) {
 		this(name, 3);
 	}
+	
+	//No-parameter constructor
 	 public Pet() {
 		 this("Caniche");
 	 }
@@ -51,11 +55,18 @@ public abstract class Pet {
 	 }
 	 
 	 public abstract void train();
+	// public abstract void hunt();
 	 
+	
 	 @Override
 	 public String toString() {
-		 return "Pet name : "+pName+ "pAge Age : "+pAge+ " Pet weight : "+ pWeight;
+		 return "Pet name:"+pName+ "   pet Age:"+pAge+ " Pet weight:"+ pWeight;
 		 
 	 }
+	public void train(Hunt h) {
+		// TODO Auto-generated method stub
+		System.out.println(this.pName+ "is hunting");
+		
+	}
 
 }
