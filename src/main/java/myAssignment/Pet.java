@@ -41,7 +41,7 @@ public abstract class Pet {
 	
 	//That constructor accepts 1 parameter.
 	public Pet(String name) {
-		this(name, 3);
+		this(name, 8);
 	}
 	
 	//No-parameter constructor
