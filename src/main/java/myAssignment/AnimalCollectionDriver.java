@@ -31,6 +31,8 @@ public class AnimalCollectionDriver {
 		
 		//System.out.println("Here is the list of sorted cats: ///////////");
 		System.out.println(sortedCatSet);
+		
+		System.out.println("Sorting by age:*********************************************************************");
 		SortedSet<Cat>ageSortedCat = new TreeSet<Cat>(new CatScale());
 		ageSortedCat.addAll(catList);
 		

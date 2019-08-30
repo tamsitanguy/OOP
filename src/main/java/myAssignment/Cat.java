@@ -28,7 +28,7 @@ public class Cat extends Pet implements Animal, Serializable, Comparable<Cat> {
 	
 	public void meow() {
 		
-		System.out.println(this.getpName()+"is making a meow sound");
+		System.out.println(this.getpName()+" is making a meow sound");
 	}
 	
 	//@Override
